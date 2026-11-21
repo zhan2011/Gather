@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2563eb">
+<title>填写</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="page">
+  <div style="margin-bottom:10px;display:flex;gap:8px;align-items:center">
+    <a class="btn small" href="/">← 返回列表</a>
+    <span id="authBar" style="margin-left:auto"></span>
+  </div>
+
+  <header class="hero" style="padding-top:6px">
+    <h1 id="actTitle">加载中…</h1>
+    <p id="actDesc"></p>
+  </header>
+
+  <div id="notices"></div>
+
+  <form id="form" class="card" autocomplete="off" style="display:none"></form>
+
+  <div id="submitBar" class="card" style="display:none">
+    <button class="btn primary block" id="btnSubmit" type="button">提交</button>
+    <div class="hint-line" id="submitHint" style="text-align:center"></div>
+  </div>
+
+  <div id="results"></div>
+
+  <div class="empty" id="loading">正在加载…</div>
+</div>
+<div id="toast"></div>
+<script src="/static/common.js"></script>
+<script src="/static/activity.js"></script>
+</body>
+</html>
